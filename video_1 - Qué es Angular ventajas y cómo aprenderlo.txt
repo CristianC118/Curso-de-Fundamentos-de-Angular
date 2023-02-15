@@ -1,0 +1,100 @@
+        Qué es Angular: ventajas y cómo aprenderlo
+
+Angular es un framework de JavaScript que posee todo un ecosistema de tecnologías con módulos y paquetes listos para utilizar para el desarrollo web del lado del cliente.
+
+Angular por defecto no posee estilos, pero se pueden agregar de forma muy sencilla. La parte visual de la aplicación es muy importante porque es lo que más le interesa al usuario final. En ese sentido, Angular Material es un framework de estilos para tus aplicaciones.
+
+Desarrollado por Google, Angular es más que un framework, es una plataforma que nos da la posibilidad de desarrollar aplicaciones web como aplicaciones mobile. Además, es un framework de estructura que nos va a brindar funcionalidades para extender el template de nuestra aplicación.
+
+                Ventajas de Angular
+Algunas ventajas que trae Angular son:
+
+Mayor estructura y control del proyecto.
+Gran comunidad que ayuda con cualquier problema.
+SPA
+Rapidez
+
+            Qué características tiene Angular
+Estas son las principales características de este framework:
+
+Está respaldado y desarrollado por Google.
+Es multi-plataforma para desarrollo de aplicaciones web, móviles o de escritorio.
+Tiene excelente experiencia de desarrollo gracias a TypeScript y a herramientas de detección de errores y autocompletado de código propias de Angular.
+Posee una gran comunidad mundial donde sea que te encuentre en todo el mundo.
+
+           Cuáles son las versiones de Angular
+El framework de Angular se va actualizando constantemente, así que antes de decidir qué versión te conviene más, te dejamos el listado con el histórico de versiones que ha tenido angular desde su primera aparición.
+
+    AngularJS
+Fue la primera versión del framework.
+
+    Angular 2
+Es la segunda versión, que fue prácticamente reescrita. Se lanzó porque AngularJS tenía errores fundamentales que eran muy complejos de corregir.
+
+    Angular 4
+Es la primera actualización importante de Angular, se tomó Angular 2 y se hicieron algunas modificaciones. No existe una versión 3 para evitar una confusión por desajuste de la versión del paquete del router, que ya se distribuía como v3.3.0. La versión 4.3 de Angular es una versión menor, lo que significa que no contiene cambios de ruptura y que es un reemplazo directo de la 4.x.x.
+
+    Angular 5
+Fue lanzada en 2017. Las mejoras clave incluyen soporte para aplicaciones web progresivas, un optimizador de construcción y mejoras relacionadas con Material Design.
+
+    Angular 6
+Fue lanzada en 2018. Se trata de una versión importante centrada menos en el framework subyacente y más en la cadena de herramientas y en facilitar el movimiento rápido con Angular en el futuro, como: ng update, ng add, Angular Elements, Angular Material + CDK Components, Angular Material Starter Components, CLI Workspaces, Library Support, Tree Shakable Providers, Animations Performance Improvements y RxJS v6.
+
+    Angular 7
+Fue lanzada también en 2018. Estuvo enfocada en actualizaciones respecto al rendimiento de la aplicación, Angular Material & CDK, desplazamiento virtual, mejora de la accesibilidad de los selects, ahora soporta la proyección de contenido usando el estándar web para elementos personalizados, y actualizaciones de dependencias respecto a Typescript 3.1, RxJS 6.3.
+
+    Angular 8
+Fue lanzada el 28 de mayo de 2019. Presenta carga diferencial para todo el código de la aplicación, importaciones dinámicas para rutas perezosas, trabajadores web, soporte de TypeScript.
+
+    Angular 9
+Fue lanzada el 6 de febrero de 2020. La versión 9 mueve todas las aplicaciones para emplear el compilador y el tiempo de ejecución de Ivy por defecto. Angular se ha actualizado para funcionar con TypeScript 3.6 y 3.7. Además de cientos de correcciones de errores, el compilador y tiempo de ejecución Ivy ofrece numerosas ventajas:
+
+Tamaños de paquetes más pequeñosPruebas más rápidasMejor depuraciónMejoras en la vinculación de clases y estilos CSSMejoras en la comprobación de tiposMejora de los errores de compilaciónMejora de los tiempos de compilación, activando AOT por defectoMejora de la internacionalización
+
+    Angular 10
+Fue lanzado el 24 de junio de 2020. Incluye una lista de mejoras como:
+
+Nuevo selector de rango de fechas (librería Material UI)Advertencias sobre las importaciones de CommonJSAjustes opcionales más estrictosMantenerse al día con el ecosistemaNueva configuración del navegador por defectoDepreciaciones y eliminaciones
+
+    Angular 11
+Angular 11 fue lanzado el 11 de noviembre de 2020.
+
+    Angular 12
+Angular 12 fue lanzada el 12 de mayo de 2021.
+
+    Angular 13
+Angular 13 fue lanzado el 4 de noviembre de 2021.
+
+                ¿Cómo funciona Angular?
+Angular tiene un sistema para crear componentes llamado Engine Module o módulos de Angular, son contenedores que agrupan componentes y servicios que responden a un mismo dominio (a una misma parte de nuestra aplicación) pero no necesariamente partes físicas, si no a las funcionalidades o procesos que hace nuestra aplicación.
+
+            Qué hacen Angular y Type Script
+Los componentes son la lógica y la interfaz de usuario para cada parte de nuestra aplicación. Para crear un componente tenemos que crear una clase en Type Script con los métodos que necesitemos para la lógica de nuestro componente, además, en un archivo aparte que parece HTML, pero que no es HTML vamos a definir exactamente los componentes y etiquetas que van a ir en nuestro componente.
+
+Los servicios son agrupaciones de código, de lógica que no necesitamos solo en un componente, sino que los podemos usar en varios componentes por toda la aplicación; estos servicios se los inyectamos a nuestros componentes usando inyección de dependencias.
+
+      Incremental DOM y Angular Ivy vs Virtual DOM.
+Angular Ivy se encarga de renderizar nuestros componentes en Angular usando una estrategia llamada Incremental DOM.
+
+Así como React usa Jsx, Angular también tiene su propia sintaxis de HTML para escribir la UI de nuestras aplicaciones, no es HTML puro, tiene variaciones para que podamos iterar en una lista o usar condicionales, lo que hace Angular Ivy es transformar este “HTML” en instrucciones de JS para renderizar nuestros componentes en el DOM.
+
+Con el Incremental DOM lo que hacemos es que cada componente se convierte en ciertas instrucciones en código JS y estas instrucciones son las que se ejecutan para renderizar el componente y actualizarlo cuando hay una interacción de los usuarios, en ningún momento se hace una copia del DOM y esto nos ahorra mucha memoria.
+
+En Angular 9 reescribieron por completo el motor de render y ahí aparece Angular Ivy, antes la compilación de cada componente se transformaba en un engine factory, que es una función donde se guardaba la descripción del DOM en el que se debía transformar cada componente y el segundo es una función que se llamaba cada que el estado cambiaba para actualizar nuestro componente. Antes se tenía que compilar muchas veces.
+
+ ¿Qué conocimientos previos tener para aprender Angular?
+Se recomienda tener conocimiento básico de Javascript, además de HTML y CSS, y tal vez conocimiento de lo que es TypeScript y sus diferencias con Javascript, ya que todo Angular usa esta tecnología.
+
+    ¿Qué ofrece Angular para el desarrollo de una aplicación web?
+Angular Forms: poderosa librería lista para la creación de todo tipo de formularios.
+PWA: fácil y rápida integración con PWA para la creación de aplicaciones multi plataforma.
+Universal: también denominado como SSR (Server Side Render) para correr en el servidor, aplicaciones de navegador y optimizar el SEO y la velocidad de carga.
+i18n: internacionalización o multi lenguaje.
+Http: cliente Http propio de Angular basado en observables para sacarle el máximo potencial.
+Material: librería para la creación de interfaces de usuario basada en Material Design.
+¡Y mucho, pero mucho, más!
+
+                    Qué es un SPA
+Las aplicaciones de página única (SPA) es una página única (de ahí su nombre) en la que casi toda la información permanece igual y únicamente hay que actualizar ciertos elementos a la vez. Por ejemplo, cuando navegas por tu correo electrónico te darás cuenta de que no hay muchos cambios durante la navegación: la barra lateral y la cabecera permanecen intactas mientras recorres tu bandeja de entrada.
+
+En este tipo de aplicaciones, tu navegador no te va a redirigir a otra página, sino que Angular y su ruteador se van a encargar de eso.

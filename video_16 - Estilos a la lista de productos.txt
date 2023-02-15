@@ -1,0 +1,38 @@
+              Estilos a la lista de productos
+
+En el decorador de tu componente, verás la propiedad styleUrls donde se hace referencia a la hoja de estilos que el componente utiliza.
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+    ...
+}
+
+En este archivo puedes escribir todo el código CSS que tu componente necesita. Por ejemplo, si escogiste SCSS:
+
+div {
+    margin: 15px;
+    h1 {
+        font-family: Arial;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    p {
+        font-family: Arial;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+}
+
+Preprocesadores de CSS
+Dependiendo el preprocesador que hayas elegido, tus hojas de estilos tendrán una extensión u otra. A excepción de .css si no escogiste utilizar un preprocesador.
+
+SCSS            .scss
+SASS            .sass
+LESS            .less
+Ninguna         .css
+
+TIP: Para escojer otro preprocesador, puedes realizar este cambio manualmente en el archivo ‘angular.json’ en la raíz de tu proyecto

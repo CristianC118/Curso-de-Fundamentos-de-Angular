@@ -1,0 +1,31 @@
+                    Property Binding
+
+Property Binding es la manera que dispone Angular para controlar y modificar las propiedades de los distintos elementos de HTML. Para esto, simplemente utiliza los corchetes [] para poder modificar dinámicamente ese atributo desde el controlador.
+
+                       Utilidades
+El atributo src de la etiqueta <img> para modificar dinámicamente una imagen.
+El atributo href de un <a> para modificar un enlace.
+El atributo value de un <input> para autocompletar un valor de un formulario.
+El atributo disable de un <input> para habilitar/deshabilitar un campo de un formulario.
+
+Si tienes en tu componente:
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  empresa = 'Platzi';
+  habilitado = true;
+}
+
+Puedes modificar el value de un campo de un formulario de la siguiente manera:
+
+<input [value]="empresa" [disabled]="habilitado"  />
+
+Se imprime el valor de la propiedad empresa como valor de un <input> y gracias a la variable habilitado controlas la edición del campo.
+
+
+String interpolation: ingresar contenido (parrafo, etc)
+Propperty binding: configurar propiedades de elementos, objetos (números, propiedades, botones, valores)

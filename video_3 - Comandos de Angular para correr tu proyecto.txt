@@ -1,0 +1,21 @@
+       Comandos de Angular para correr tu proyecto
+
+El comando ng serve se usa para levantar un servidor de desarrollo en nuestro entorno local y probar nuestra aplicación. Puedes complementar este comando con algunas opciones y variantes:
+
+Lanzar servidor y abrir el navegador por defecto automáticamente:
+
+ng serve -o
+
+Angular utiliza por defecto el puerto 4200. Si quieres utilizar otro, podemos hacer:
+
+ng serve --port=3500
+
+TIP: Puedes detener el servidor de prueba con ‘CTRL + C’
+
+Finalmente, si quieres analizar la versión de Angular y la versión de todas las dependencias instaladas, puedes hacer:
+
+ng version
+
+
+Bastante útil para correr fuera
+ng serve --host 0.0.0.0 

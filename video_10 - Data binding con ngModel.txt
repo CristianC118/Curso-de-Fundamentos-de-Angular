@@ -1,0 +1,22 @@
+                Data binding con ngModel
+
+El atributo ngModel permite el intercambio de datos de forma bidireccional entre el componente y la vista. Lo que suceda en el componente, se verá reflejado en la vista. Lo que se suceda en la vista, inmediatamente impactará en el componente.
+
+<input [(ngModel)]="name">
+
+ngModel usar tanto los corchetes [] como los paréntesis (). De esta manera, se vuelve bidireccional el intercambio de datos. Si no quieres la bidirección, solo colocamos los corchetes [ngModel] para que la comunicación sea unidireccional.Para utilizar ngModel, es necesario hacer uso e importar Angular Forms. Para esto, dirígete al archivo app.module.ts que es el módulo principal de toda aplicación Angular y agrega lo siguiente:
+
+...
+import { FormsModule } from '@angular/forms';
+
+@NgModule({
+  declarations: [ ... ],
+  imports: [
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [ ... ]
+})
+export class AppModule { }
+
+De esta manera puedes importar el módulo FormsModule desde @angular/forms y agregarlo a imports para emplear la propiedad [(ngModel)].
